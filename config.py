@@ -4,6 +4,7 @@ Config = {
         'red': '\033[1;31m',
         'green': '\033[1;32m'
     },
+    'vector_index': 10,
     'line_size': 35,
     'default_options': [1, 2, 3, 4, 5],
     'menu_options': '''

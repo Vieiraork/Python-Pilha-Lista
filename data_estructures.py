@@ -1,14 +1,17 @@
 from config import Config
 
+# Values in config.py
+# Recupera os valores estáticos do arquivo config.py
 colors = Config['colors']
+length = Config['vector_index']
 
 
 class DataEstutures:
     # Inicialização do vetor de dez posições
     # Init vector whit ten positions
-    vector = [] * 10
+    vector = [] * length
 
-    def insert(self, number) -> type(None):
+    def insert(self, number: int) -> type(None):
         if len(self.vector) == 10:
             print(f'{colors["red"]}Vector is full!{colors["white"]}')
         else:
