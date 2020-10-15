@@ -2,7 +2,6 @@ from time import sleep
 from config import Config
 import data_estructures
 
-
 print('''
     Autor: William Vieira
     Software Engineer student
@@ -17,11 +16,11 @@ menu = Config['menu_options']
 
 # Instância do objeto
 # New object instance
-data = data_estructures.DataEstutures()
+data = data_estructures
 print(f'{colors["white"]}', end='')
 
 
-def op() -> type(None):
+def op():
     while True:
         print(menu)
         print('-' * line)
