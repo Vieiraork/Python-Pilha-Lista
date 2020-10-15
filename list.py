@@ -14,9 +14,10 @@ line = Config['line_size']
 options = Config['default_options']
 menu = Config['menu_options']
 
-# Instância do objeto
-# New object instance
+# Instância do arquivo
+# New instance from data_structures.py
 data = data_estructures
+
 print(f'{colors["white"]}', end='')
 
 
