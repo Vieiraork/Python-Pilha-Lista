@@ -1,4 +1,4 @@
-# Python-Pilha
+# Python-Lista
 
 Algoritmo de pilha estrutura de dados usando python 3
 
