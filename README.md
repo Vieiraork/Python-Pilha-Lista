@@ -1,6 +1,6 @@
 # Python-Lista
 
-Algoritmo de pilha estrutura de dados usando python 3
+Algoritmo de estrutura de dados usando Python 3
 
 # Sobre
 
