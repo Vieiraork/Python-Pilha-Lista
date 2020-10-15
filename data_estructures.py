@@ -10,12 +10,12 @@ length = Config['vector_index']
 vector = [] * length
 
 
-def insert(number: int):
+def insert(number):
     if len(vector) == 10:
         print(f'{colors["red"]}Vector is full!{colors["white"]}')
     else:
-        vector.append(number)
         print(f'{colors["green"]}Value {number} successful inserted{colors["white"]}')
+        vector.append(number)
 
 
 def delete_first():
