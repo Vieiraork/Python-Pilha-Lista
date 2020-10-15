@@ -1,3 +1,5 @@
+from colorama import Fore, Style
+from os import system, name
 from time import sleep
 from config import Config
 import data_estructures
@@ -9,7 +11,6 @@ print('''
 
 # Setar os valores de configurações
 # Set values from config.py
-colors = Config['colors']
 line = Config['line_size']
 options = Config['default_options']
 menu = Config['menu_options']
@@ -18,15 +19,14 @@ menu = Config['menu_options']
 # New instance from data_structures.py
 data = data_estructures
 
-print(f'{colors["white"]}', end='')
-
 
 def op():
     while True:
-        print(menu)
+        print(f'{Fore.WHITE}{menu}')
         print('-' * line)
         opt = int(input('Type a option: '))
         print('-' * line)
+        system('cls' if name == 'nt' else 'clear')
 
         if opt in options:
             if opt == 1:
@@ -47,4 +47,4 @@ def op():
                 sleep(1)
                 break
         else:
-            print(f'{colors["red"]}Invalid option, please try again.{colors["white"]}')
+            print(f'{Fore.RED}Invalid option, please try again.{Style.RESET_ALL}')
