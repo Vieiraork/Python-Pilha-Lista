@@ -12,9 +12,9 @@ vector = [] * length
 
 def insert(number):
     if len(vector) == 10:
-        print(f'{Fore.RED}Vector is full!{Style.RESET_ALL}')
+        print(f'{Fore.LIGHTRED_EX}Vector is full!{Style.RESET_ALL}')
     else:
-        print(f'{Fore.GREEN}Value {number} successful inserted{Style.RESET_ALL}')
+        print(f'{Fore.LIGHTGREEN_EX}Value {number} successful inserted{Style.RESET_ALL}')
         vector.append(number)
 
 
@@ -22,15 +22,15 @@ def delete_first():
     if len(vector) < 1:
         print(f'{Fore.RED}Vector is empty.{Style.RESET_ALL}')
     else:
-        print(f'{Fore.GREEN}Value {vector[0]} removed.{Style.RESET_ALL}')
+        print(f'{Fore.LIGHTGREEN_EX}Value {vector[0]} removed.{Style.RESET_ALL}')
         vector.remove(vector[0])
 
 
 def delete_last():
     if len(vector) < 1:
-        print(f'{Fore.GREEN}Vector is empty.{Style.RESET_ALL}')
+        print(f'{Fore.RED}Vector is empty.{Style.RESET_ALL}')
     else:
-        print(f'{Fore.RED}Value {vector[-1]} removed.{Style.RESET_ALL}')
+        print(f'{Fore.LIGHTGREEN_EX}Value {vector[-1]} removed.{Style.RESET_ALL}')
         vector.pop()
 
 
@@ -39,5 +39,5 @@ def display():
         print(f'{Fore.RED}Vector is empty.{Style.RESET_ALL}')
     else:
         for i in vector:
-            print(f'{Fore.WHITE}{i} - ', end='')
+            print(f'{Fore.LIGHTGREEN_EX}{i} - ', end='')
         print('End...')

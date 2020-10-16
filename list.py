@@ -4,7 +4,7 @@ from time import sleep
 from config import Config
 import data_estructures
 
-print('''
+print(f'''{Fore.LIGHTCYAN_EX}
     Autor: William Vieira
     Software Engineer student
 ''')
@@ -22,7 +22,7 @@ data = data_estructures
 
 def op():
     while True:
-        print(f'{Fore.WHITE}{menu}')
+        print(f'{Fore.LIGHTMAGENTA_EX}{menu}')
         print('-' * line)
         opt = int(input('Type a option: '))
         print('-' * line)
@@ -32,18 +32,18 @@ def op():
             if opt == 1:
                 value = int(input('Type a number: '))
                 data.insert(value)
-                print('-' * line)
+                print(f'{Fore.LIGHTMAGENTA_EX}-' * line)
             if opt == 2:
                 data.delete_first()
-                print('-' * line)
+                print(f'{Fore.LIGHTMAGENTA_EX}-' * line)
             if opt == 3:
                 data.delete_last()
-                print('-' * line)
+                print(f'{Fore.LIGHTMAGENTA_EX}-' * line)
             if opt == 4:
                 data.display()
-                print('-' * line)
+                print(f'{Fore.LIGHTMAGENTA_EX}-' * line)
             if opt == 5:
-                print('Programming close...')
+                print(f'{Fore.LIGHTMAGENTA_EX}Close program...')
                 sleep(1)
                 break
         else:
