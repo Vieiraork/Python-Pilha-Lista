@@ -1,6 +1,6 @@
 # Python-Lista
 
-Algoritmo de estrutura de dados usando Python 3
+Algoritmo que exemplifica a funcionalidade de dois algoritmos em estrutura de dados o primeiro deles é a pilha (LIFO) e o segundo é a fila (LIFO).
 
 # Sobre
 
