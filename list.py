@@ -30,8 +30,7 @@ def op():
 
         if opt in options:
             if opt == 1:
-                value = int(input('Type a number: '))
-                data.insert(value)
+                data.insert()
                 print(f'{Fore.LIGHTMAGENTA_EX}-' * line)
             if opt == 2:
                 data.delete_first()

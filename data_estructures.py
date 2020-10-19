@@ -10,10 +10,11 @@ length = Config['vector_index']
 vector = [] * length
 
 
-def insert(number):
+def insert():
     if len(vector) == 10:
         print(f'{Fore.LIGHTRED_EX}Vector is full!{Style.RESET_ALL}')
     else:
+        number = int(input('Type value: '))
         print(f'{Fore.LIGHTGREEN_EX}Value {number} successful inserted{Style.RESET_ALL}')
         vector.append(number)
 
